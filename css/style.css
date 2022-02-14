@@ -1,0 +1,109 @@
+body{
+    overflow-x: hidden ;
+    background: #343f4f;
+}
+
+/*navbar*/
+
+.navbar-brand{
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+.lien a{
+    color: black;
+   font-size:30px ;
+   margin-right: 50px;
+}
+.lien a:hover{
+    color: #c3c7cb!important;
+}
+/* .second2{
+    height: 100vh; 
+    width: 100%; 
+    
+}  */
+.carousel-item{
+    height: 100vh;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-caption{
+    position: absolute;
+    top:38%;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    left:0 ;
+}
+.carousel-caption h5{
+   font-size: 4.8rem;
+   font-weight: 700;
+   letter-spacing: .3rem;
+   text-shadow: .1rem .1rem .8rem black;
+   padding-bottom: 1rem;
+}
+.carousel-caption p{
+    margin: auto;
+}
+.wrapper{
+    display: inline-flex;
+}
+.wrapper .static{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.wrapper .txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden  ; 
+}
+.txts li{
+    list-style: none; 
+    font-size: 40px;
+    color: #fc6d6d;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+       top:-360px;
+    }
+} 
+.txts li span{
+    position: relative;
+    
+}
+.txts li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left:0;
+    background: #343f4f;
+    border-left: 2px solid #fc6d6d;;
+    animation: typing 1.5s steps(10) infinite;
+
+}
+@keyframes typing{
+    100%{
+       left:100% ; 
+       margin: 0 -35px 0 35px ;
+    }
+}
+@media (max-width:767px){
+    .carousel-caption h5{
+        font-size: 1.8rem;
+        letter-spacing: .12rem;
+        padding-bottom: .5rem; 
+     }  
+}
