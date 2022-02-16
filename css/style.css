@@ -1,11 +1,11 @@
-body{
+ body{
     overflow-x: hidden ;
-    background: #343f4f;
+   
 }
 
 /*navbar*/
 
-.navbar-brand{
+ .navbar-brand{
     font-size: 50px;
     font-weight: bold;
     color: black;
@@ -16,14 +16,14 @@ body{
    margin-right: 50px;
 }
 .lien a:hover{
-    color: #c3c7cb!important;
+    color: #c3c7cb!important; 
 }
 /* .second2{
     height: 100vh; 
     width: 100%; 
     
 }  */
-.carousel-item{
+ .carousel-item{
     height: 100vh;
 }
 .carousel-item img{
@@ -55,49 +55,48 @@ body{
 }
 .wrapper .static{
     color: #fff;
-    font-size: 40px;
+    font-size: 60px; 
     font-weight: 400;
-    padding-top: 20px;
+    padding-top:20px;
 }
 .wrapper .txts{
     margin-left: 15px;
     height: 90px;
-    line-height: 90px;
-    overflow: hidden  ; 
+    line-height: 120px; 
+    overflow: hidden; 
 }
 .txts li{
+    color: orangered;
     list-style: none; 
-    font-size: 40px;
-    color: #fc6d6d;
+    font-size: 60px;
     font-weight: 500;
     position: relative;
-    top: 0;
-    animation: slide 6s steps(4) infinite;
+    top: 0;  
+    animation: slide 6s steps(3) infinite; 
 }
-@keyframes slide{
+@keyframes slide {
     100%{
-       top:-360px;
+       top: -360px;
     }
-} 
+}  
 .txts li span{
-    position: relative;
-    
+    position: relative;    
 }
 .txts li span::after{
     content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    position: absolute; 
     left:0;
+    /* height: 100%;    */
+     width: 100%;
     background: #343f4f;
-    border-left: 2px solid #fc6d6d;;
-    animation: typing 1.5s steps(10) infinite;
+    border-left: 2px solid orangered;
+    animation: typing 2s steps(11) infinite;
 
-}
-@keyframes typing{
+} 
+@keyframes typing  {
     100%{
-       left:100% ; 
-       margin: 0 -35px 0 35px ;
+       left: 100% ; 
+       margin: 0 -35px  0 35px ;
     }
 }
 @media (max-width:767px){
@@ -106,4 +105,198 @@ body{
         letter-spacing: .12rem;
         padding-bottom: .5rem; 
      }  
+}
+@media (max-width:900px){
+    .wrapper .static{
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    .txts li{
+        font-size: 40px;
+    }
+    .carousel-caption h5{
+        font-size: 50px;
+    }
+}
+
+/* about */
+ 
+.about{
+    position: relative;
+} 
+.texte h1{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    font-size: 50px;
+    font-weight: bold; 
+    position: absolute;
+    left: 50%; 
+}
+.texte h1::after{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: green;
+    transform:scale(0);
+    transition: transform 0.8s ease-in-out  ;
+}
+.texte h1:hover::after {
+     transform:scale(1); 
+    
+} 
+@media (max-width:900px){
+    .texte h1{
+        left: 25%;
+         /* margin: 30px;  */
+    }
+}
+@media (min-width:900px){
+    .texte h1{
+        left: 40%;
+         /* margin: 30px;  */
+    }
+}
+/* @media (min-width:940px){
+    .texte h1{
+        left: 55%;
+    }
+} */
+.corps{
+    display: flex;
+    flex-direction: row;
+   height: 800px;
+   border: 1px solid black;
+   width: 100%;
+   /* background-color: green; */
+  
+}
+.images{
+    height: 500px;
+    border: 1px solid black; 
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: orangered;
+
+}
+.test{
+    height: 500px;
+    border: 1px solid black; 
+    width: 50%;
+    margin-top: 10%;
+    margin-right: 10px;
+    background-color:green;
+}
+@media (max-width:900px){
+    .corps{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .images{
+        height: 300px;
+        margin-top: 160px;
+        height: 300px;
+        width: 95%;
+    }
+    .test{
+        height: 300px;
+        width: 95%;
+        margin-left: 09px;
+        margin-top: 20px;
+        
+    }
+
+}
+/* @media (max-width:1370px){
+    .texte h1{
+        padding-bottom: 12%!important;
+    }
+} */
+ @media (max-width:700px){
+    .wrapper .static{
+        font-size:30px ;
+    }
+    .txts li{
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .texte h1{
+        left: 26%;
+    }
+    .texte1 h1::after{
+        width: 100%;
+    }
+} 
+.groupe{
+    margin-top: 10px;
+    border: 1px solid black;
+    height: 1000px;
+}
+.texte1 h1{
+    left: 40%;
+    margin: 30px;
+    font-size: 50px;
+    font-weight: bold; 
+    position: absolute;
+}
+.texte1 h1::after{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: green;
+    transform:scale(0);
+    transition: transform 0.8s ease-in-out  ;
+}
+.texte1 h1:hover::after {
+     transform:scale(1); 
+    
+}
+@media (max-width:900px){
+    .texte1 h1{
+        left: 25%;
+        /* margin: 30px; */
+    }
+    .texte1 h1::after{
+        width: 70%;
+    }
+}
+/* @media (min-width:900px){
+    .texte1 h1{
+        left: 30%;
+        /* margin: 30px; 
+    }
+} */
+.cartes{
+    margin-top: 10%;
+}
+.petit{
+    height: 380px;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: 30px;
+    color: #fff;
+    border:1px solid green;
+    -webkit-box-shadow: inset 2px 8px 82px -8px rgba(36,150,30,0.79);
+    -moz-box-shadow: inset 2px 8px 82px -8px rgba(36,150,30,0.79);
+    box-shadow: inset 2px 8px 82px -8px rgba(36,150,30,0.79);
+    border-radius: 10px;
+}
+.btn:hover{
+    color: orangered;
+    background-color: #fff;
+}
+.card h1{
+    color: #fff;
+    font-size: 70px;
+    text-align: center;
+    padding: 30px;
 }

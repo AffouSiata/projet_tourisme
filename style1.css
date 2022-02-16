@@ -1,0 +1,24 @@
+/* .groupe{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border:1px solid black;
+    height: 400px;
+    width: 450px
+}
+.card{
+    height: 150px;
+    width: 150px;
+    border:1px solid black;
+    margin: 40px;
+}
+.groupe2{
+
+} */
+
+.autre{
+    margin-left: 15%;
+}
